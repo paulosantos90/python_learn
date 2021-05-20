@@ -1,0 +1,18 @@
+alpha = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','A','B','C']
+
+'''letra = str(input('Informe uma letra: ')).strip().upper()
+
+letra_convertida = int(alpha.index(letra) + 3)
+
+print(alpha[letra_convertida])'''
+
+cont = 0
+pos = 0
+palavra = str(input('Informe uma palavra: ')).strip().upper()
+lista_palavra = list(palavra)
+
+while cont < len(palavra):
+    letra_convertida = int(alpha.index(lista_palavra[pos]) + 3)
+    cont += 1
+    pos += 1
+    print(alpha[letra_convertida],end='')
